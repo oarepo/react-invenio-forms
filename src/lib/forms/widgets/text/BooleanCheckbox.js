@@ -5,7 +5,6 @@
  */
 
 import PropTypes from "prop-types";
-import React from "react";
 import { Form, Label } from "semantic-ui-react";
 import { FieldLabel } from "../../FieldLabel";
 import { RadioField } from "../../RadioField";

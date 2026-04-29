@@ -4,15 +4,15 @@
  * SPDX-License-Identifier: MIT
  */
 
-import React from "react";
-import ReactDOM from "react-dom";
+import { createRoot } from "react-dom/client";
 import { RadioField } from "./RadioField";
 
 import { Form, Formik } from "formik";
 
 it("renders without crashing", () => {
   const div = document.createElement("div");
-  ReactDOM.render(
+  const root = createRoot(div);
+  root.render(
     <Formik>
       {() => (
         <Form>
@@ -28,6 +28,6 @@ it("renders without crashing", () => {
         </Form>
       )}
     </Formik>,
-    div
   );
+  root.unmount();
 });

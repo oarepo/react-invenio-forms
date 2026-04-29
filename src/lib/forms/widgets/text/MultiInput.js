@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MIT
  */
 
-import React, { useState } from "react";
+import { useState } from "react";
 import PropTypes from "prop-types";
 import { useFormikContext, getIn } from "formik";
 import { FieldLabel } from "../../FieldLabel";

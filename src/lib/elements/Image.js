@@ -4,7 +4,7 @@
  */
 
 import PropTypes from "prop-types";
-import React, { Component } from "react";
+import { createRef, Component } from "react";
 import { Image as SUIImage, Ref } from "semantic-ui-react";
 import axios from "axios";
 
@@ -26,7 +26,7 @@ export class Image extends Component {
       }
     }
   }
-  myRef = React.createRef();
+  myRef = createRef();
 
   setSrc = (currentTarget, src, isFallback = false) => {
     if (isFallback) {
