@@ -5,20 +5,17 @@
  * SPDX-License-Identifier: MIT
  */
 
-import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { Icon } from "semantic-ui-react";
 
-export class FieldLabel extends Component {
-  render() {
-    const { htmlFor, icon, label, className } = this.props;
-    return (
-      <label htmlFor={htmlFor} className={className}>
-        {icon ? <Icon name={icon} /> : null}
-        {label}
-      </label>
-    );
-  }
+export function FieldLabel(props) {
+  const { htmlFor, icon, label, className } = props;
+  return (
+    <label htmlFor={htmlFor} className={className}>
+      {icon ? <Icon name={icon} /> : null}
+      {label}
+    </label>
+  );
 }
 
 FieldLabel.propTypes = {

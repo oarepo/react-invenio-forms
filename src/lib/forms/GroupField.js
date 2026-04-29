@@ -4,12 +4,12 @@
  * SPDX-License-Identifier: MIT
  */
 
-import React from "react";
+import { Component } from "react";
 import PropTypes from "prop-types";
 import { Field, getIn, FastField } from "formik";
 import { Form } from "semantic-ui-react";
 
-export class GroupField extends React.Component {
+export class GroupField extends Component {
   hasGroupErrors = (errors) => {
     const { fieldPath } = this.props;
     for (const field in errors) {

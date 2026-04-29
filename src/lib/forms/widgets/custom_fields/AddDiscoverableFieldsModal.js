@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: MIT
  */
 
-import React, { Component } from "react";
+import { Component } from "react";
 import { RemoveField } from "./RemoveField";
 import { ListAndFilterCustomFields } from "./ListAndFilterCustomFields";
 import { importWidget } from "../loader";

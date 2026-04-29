@@ -4,7 +4,8 @@
  * SPDX-FileCopyrightText: 2024-2026 KTH Royal Institute of Technology.
  * SPDX-License-Identifier: MIT
  */
-import React, { Component } from "react";
+
+import { createRef, Component } from "react";
 import { Editor } from "@tinymce/tinymce-react";
 import "tinymce/tinymce";
 import "tinymce/models/dom/model";
@@ -65,8 +66,8 @@ export class RichEditor extends Component {
       fileErrors: [],
     };
 
-    this.editorRef = React.createRef();
-    this.editorDialogRef = React.createRef();
+    this.editorRef = createRef();
+    this.editorDialogRef = createRef();
   }
 
   addToFileErrors = (filename, error) => {
