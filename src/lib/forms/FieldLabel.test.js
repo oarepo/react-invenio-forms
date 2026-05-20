@@ -18,7 +18,7 @@ it("renders without crashing with all props", () => {
   const div = document.createElement("div");
   const root = createRoot(div);
   root.render(
-    <FieldLabel htmlFor="foo" icon="american sign language interpreting" label="Foo" />,
+    <FieldLabel htmlFor="foo" icon="american sign language interpreting" label="Foo" />
   );
   root.unmount();
 });
