@@ -5,6 +5,7 @@
  */
 
 import PropTypes from "prop-types";
+import { Component } from "react";
 import * as Yup from "yup";
 import { Header, Message, Container } from "semantic-ui-react";
 
